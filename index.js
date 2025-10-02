@@ -17,7 +17,16 @@ function multiplesOfThree (n) {
     }
 }
 }
-multiplesOfThree(100)
+// multiplesOfThree(100)
 
+// problem 3 Syed 
 
-   
+function multiplesOfThree (n) {
+    for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+    console.log(i) 
+    }
+}
+} 
+// multiplesOfThree(100)
+
