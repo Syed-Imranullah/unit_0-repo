@@ -19,7 +19,7 @@ function multiplesOfThree (n) {
 }
 // multiplesOfThree(100)
 
-// problem 3 Syed 
+// Problem 3 Syed 
 
 function multiplesOfThree (n) {
     for (let i = 1; i <= n; i++) {
@@ -30,5 +30,14 @@ function multiplesOfThree (n) {
 } 
 // multiplesOfThree(100)
 
+// Problem 4 Sanaa
 
-   
+function untilNum(n) {
+    for (let i = 1; i <= n; i++) {
+        console.log(i)
+    }
+    return n
+}
+untilNum(5)
+untilNum(9)
+untilNum(42)
