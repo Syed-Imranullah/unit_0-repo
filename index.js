@@ -1,5 +1,11 @@
-function fiveToOneHundred () {
+
+// 1
+
+function fiveToOneHundred (n) {
     for (let i = 5; i <= 100; i++){
-        
-    }
-}
+        console.log(i)    
+} 
+
+} 
+fiveToOneHundred()
+
