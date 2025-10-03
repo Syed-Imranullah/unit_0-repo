@@ -38,6 +38,19 @@ function untilNum(n) {
     }
     return n
 }
-untilNum(5)
-untilNum(9)
-untilNum(42)
+//untilNum(5)
+//untilNum(9)
+//untilNum(42)
+
+// problem 5 Syed 
+
+function multiply (num1, num2) {
+    for (let i = 1; i <= ,  ; i ++) {
+        let product = num1 * num2
+        console.log(product)
+    }   
+}
+
+multiply (2, 4)
+multiply (10, -5)
+multiply (3, 7.5)
