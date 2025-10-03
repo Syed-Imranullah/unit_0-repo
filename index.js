@@ -42,7 +42,7 @@ function untilNum(n) {
 //untilNum(9)
 //untilNum(42)
 
-// problem 5 Syed 
+// Problem 5 Syed 
 
 function multiply (num1, num2) {
     for (let i = 1; i <= ,  ; i ++) {
@@ -54,3 +54,18 @@ function multiply (num1, num2) {
 multiply (2, 4)
 multiply (10, -5)
 multiply (3, 7.5)
+
+// Problem 6 Sanaa
+
+function add(num1, num2) {
+    let sum = num1 + num2
+    if (num1 === num2) {
+        console.log(sum * 3)
+    } else {
+        console.log(sum)
+    }
+}
+add(2, 4)     //returns 6
+add(10, -5)   //returns 5add(3, 7.5)   //returns 10.5
+add(5, 5)     //returns 30 because the sum of 5 + 5 = 10 and 30 is triple that
+add(6, 6)     //returns 36 because the sum of 6 + 6 = 12 and 36 is triple that
