@@ -65,12 +65,12 @@ function add(num1, num2) {
         console.log(sum)
     }
 }
-//add(2, 4)     //returns 6
-//add(10, -5)   //returns 5add(3, 7.5)   //returns 10.5
-//add(5, 5)     //returns 30 because the sum of 5 + 5 = 10 and 30 is triple that
-//add(6, 6)     //returns 36 because the sum of 6 + 6 = 12 and 36 is triple that
+// add(2, 4)     
+// add(10, -5)   
+// add(5, 5)     
+// add(6, 6)     
 
-//Probelem 7 Syed
+// Probelem 7 Syed
 
 function isNegative (n) {
     if (n < 0) {
@@ -79,25 +79,35 @@ function isNegative (n) {
         return false;
     }
 }
-//console.log(isNegative(3))
-//console.log(isNegative(-2))
-//console.log(isNegative(Math.Pi))
+// console.log(isNegative(3))
+// console.log(isNegative(-2))
+// console.log(isNegative(Math.Pi))
 
-// Problem 8 Problem
+// Problem 8 Sanaa
 
 function triangleArea(height, base) {
     let area = base / 2 * height
     console.log(area)
 }
-// triangleArea(5, 7)    //returns 17.5
-// triangleArea(6, 8)    //returns 24
+// triangleArea(5, 7)    
+// triangleArea(6, 8)    
 
-//Problem 9 Syed 
+// Problem 9 Syed 
 
 function betweenTwentyAndFourty (n) {
     return n > 20 && n < 40 
 }
-//console.log(betweenTwentyAndFourty(20))      
-//console.log(betweenTwentyAndFourty(21))     
-//console.log(betweenTwentyAndFourty(39))    
-//console.log(betweenTwentyAndFourty(40)) 
+// console.log(betweenTwentyAndFourty(20))      
+// console.log(betweenTwentyAndFourty(21))     
+// console.log(betweenTwentyAndFourty(39))    
+// console.log(betweenTwentyAndFourty(40)) 
+
+// Problem 10 Sanaa
+
+function largest(num1, num2, num3) {
+    console.log(Math.max(num1, num2, num3))
+}
+    
+largest(4, 6, 8)        
+largest(30, 22, 17)
+largest(41, 108, 86)
