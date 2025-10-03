@@ -45,15 +45,15 @@ function untilNum(n) {
 // Problem 5 Syed 
 
 function multiply (num1, num2) {
-    for (let i = 1; i <= ,  ; i ++) {
+    for (let i = 1; i <= 0  ; i ++) {
         let product = num1 * num2
         console.log(product)
     }   
 }
 
-multiply (2, 4)
-multiply (10, -5)
-multiply (3, 7.5)
+//multiply (2, 4)
+//multiply (10, -5)
+//multiply (3, 7.5)
 
 // Problem 6 Sanaa
 
@@ -69,3 +69,16 @@ add(2, 4)     //returns 6
 add(10, -5)   //returns 5add(3, 7.5)   //returns 10.5
 add(5, 5)     //returns 30 because the sum of 5 + 5 = 10 and 30 is triple that
 add(6, 6)     //returns 36 because the sum of 6 + 6 = 12 and 36 is triple that
+
+//Probelem 7 Syed
+
+function isNegative (n) {
+    if (n < 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+//console.log(isNegative(3))
+//console.log(isNegative(-2))
+//console.log(isNegative(Math.Pi))
