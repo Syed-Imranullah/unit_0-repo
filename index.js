@@ -91,3 +91,13 @@ function triangleArea(height, base) {
 }
 // triangleArea(5, 7)    //returns 17.5
 // triangleArea(6, 8)    //returns 24
+
+//Problem 9 Syed 
+
+function betweenTwentyAndFourty (n) {
+    return n > 20 && n < 40 
+}
+//console.log(betweenTwentyAndFourty(20))      
+//console.log(betweenTwentyAndFourty(21))     
+//console.log(betweenTwentyAndFourty(39))    
+//console.log(betweenTwentyAndFourty(40)) 
