@@ -146,3 +146,7 @@ console.log(switchLetters("anne"));
 console.log(switchLetters("hello world")); 
 console.log(switchLetters("a"));            
 console.log(switchLetters(""));            
+//largest(4, 6, 8)        
+//largest(30, 22, 17)
+//largest(41, 108, 86)
+
