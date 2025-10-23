@@ -108,9 +108,9 @@ function largest(num1, num2, num3) {
     console.log(Math.max(num1, num2, num3))
 }
     
-largest(4, 6, 8)        
-largest(30, 22, 17)
-largest(41, 108, 86)
+// largest(4, 6, 8)        
+// largest(30, 22, 17)
+// largest(41, 108, 86)
 
 // problem 14 Syed 
 
@@ -124,9 +124,9 @@ function absoluteNineteen (n) {
         return diff;
     }
 }
-//console.log(absoluteNineteen(10)); 
-//console.log(absoluteNineteen(20));
-//console.log(absoluteNineteen(25)); 
+console.log(absoluteNineteen(10)); 
+console.log(absoluteNineteen(20));
+console.log(absoluteNineteen(25)); 
 
 //USED AI HELP TO UNDERSTAND THE QUESTION "WHAT THEY WERE ASKING To do"
 
@@ -146,7 +146,7 @@ console.log(switchLetters("anne"));
 console.log(switchLetters("hello world")); 
 console.log(switchLetters("a"));            
 console.log(switchLetters(""));            
-//largest(4, 6, 8)        
-//largest(30, 22, 17)
-//largest(41, 108, 86)
+// largest(4, 6, 8)        
+// largest(30, 22, 17)
+// largest(41, 108, 86)
 
