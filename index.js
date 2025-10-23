@@ -21,7 +21,7 @@ function multiplesOfThree (n) {
 
 // Problem 3 Syed 
 
-function multiplesOfThree (n) {
+function multiplesOfThreeOrFive (n) { //fixed Function Name
     for (let i = 1; i <= n; i++) {
     if (i % 3 === 0 || i % 5 === 0) {
     console.log(i) 
@@ -45,30 +45,30 @@ function untilNum(n) {
 // Problem 5 Syed 
 
 function multiply (num1, num2) {
-    for (let i = 1; i <= 0  ; i ++) {
         let product = num1 * num2
-        console.log(product)
+        return product  // removed loop becuase its not needed and used return 
     }   
-}
 
-//multiply (2, 4)
-//multiply (10, -5)
-//multiply (3, 7.5)
+
+//console.log(multiply(2, 4))
+//console.log(multiply (10, -5))
+//console.log(multiply (3, 7.5))
 
 // Problem 6 Sanaa
 
 function add(num1, num2) {
     let sum = num1 + num2
     if (num1 === num2) {
-        console.log(sum * 3)
-    } else {
-        console.log(sum)
+        return sum * 3
+    } else {        // returned instead of console.log
+        return sum
     }
 }
-// add(2, 4)     
-// add(10, -5)   
-// add(5, 5)     
-// add(6, 6)     
+// console.log(add(2, 4))    
+// console.log(add(10, -5))
+// console.log(add(3, 7.5))
+// console.log(add(5, 5))    
+// console.log(add(6, 6))    
 
 // Probelem 7 Syed
 
@@ -87,10 +87,10 @@ function isNegative (n) {
 
 function triangleArea(height, base) {
     let area = base / 2 * height
-    console.log(area)
+    return area     // returned instead of console.log
 }
-// triangleArea(5, 7)    
-// triangleArea(6, 8)    
+// console.log(triangleArea(5, 7))   
+// console.log(triangleArea(6, 8))   
 
 // Problem 9 Syed 
 
@@ -105,12 +105,57 @@ function betweenTwentyAndFourty (n) {
 // Problem 10 Sanaa
 
 function largest(num1, num2, num3) {
-    console.log(Math.max(num1, num2, num3))
+    return Math.max(num1, num2, num3)    // Used return instead of console.log
 }
     
-largest(4, 6, 8)        
-largest(30, 22, 17)
-largest(41, 108, 86)
+// console.log(largest(4, 6, 8))    
+// console.log(largest(30, 22, 17))
+// console.log(largest(41, 108, 86))
+
+// Problem 11 Sanaa
+
+function printTime() {
+    let time = new Date()
+    let hours = time.getHours()
+    let minutes = time.getMinutes()
+    let seconds = time.getSeconds()
+if (hours > 12) {
+    hours = hours - 12
+} else if (minutes < 10) {
+    minutes = `0${minutes}`
+} else if (seconds < 10) {
+   seconds = `0${seconds}`
+}
+    console.log(`${hours}:${minutes}:${seconds}`)
+}
+
+// Problem 12 Sanaa
+
+function isLeapYear(year) {
+    if (year % 4 !== 0) {
+        return false
+    } else if (year % 100 !== 0) {
+        return true
+    } else if (year % 400 === 0) {
+        return true
+    } else {
+        return false
+    }
+}
+// console.log(isLeapYear(2000))    //returns true
+// console.log(isLeapYear(1900))    //returns false
+// console.log(isLeapYear(2020))    //returns true
+// console.log(isLeapYear(1999))    //returns false
+
+// Problem 13 Sanaa
+
+function getExtention(filename) {
+    let extension = filename.split('.')
+    return '.' + filename.split('.')[1]
+}
+// getExtention("hello.txt")     //returns ".txt"
+// getExtention("app.js")        //returns ".js"
+// getExtention("README.md")     //returns ".md"
 
 // problem 14 Syed 
 
@@ -142,11 +187,23 @@ function switchLetters(str) {
     return last + middle + first;
 }
 
-console.log(switchLetters("anne"));         
-console.log(switchLetters("hello world")); 
-console.log(switchLetters("a"));            
-console.log(switchLetters(""));            
-//largest(4, 6, 8)        
-//largest(30, 22, 17)
-//largest(41, 108, 86)
+// console.log(switchLetters("anne"));         
+// console.log(switchLetters("hello world")); 
+// console.log(switchLetters("a"));            
+// console.log(switchLetters(""));  
 
+// Problem 16 Syed
+
+function changeString (str) {
+    let result = ""
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i]
+        
+        let nextChar = String.fromCharCode(char.charCodeAt(0) + 1)
+        result += nextChar
+    }
+        return result
+}
+
+console.log(changeString('abc'))
+console.log(changeString('helloworld'))
