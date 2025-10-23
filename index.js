@@ -112,6 +112,51 @@ function largest(num1, num2, num3) {
 // console.log(largest(30, 22, 17))
 // console.log(largest(41, 108, 86))
 
+// Problem 11 Sanaa
+
+function printTime() {
+    let time = new Date()
+    let hours = time.getHours()
+    let minutes = time.getMinutes()
+    let seconds = time.getSeconds()
+if (hours > 12) {
+    hours = hours - 12
+} else if (minutes < 10) {
+    minutes = `0${minutes}`
+} else if (seconds < 10) {
+   seconds = `0${seconds}`
+}
+    console.log(`${hours}:${minutes}:${seconds}`)
+}
+
+// Problem 12 Sanaa
+
+function isLeapYear(year) {
+    if (year % 4 !== 0) {
+        return false
+    } else if (year % 100 !== 0) {
+        return true
+    } else if (year % 400 === 0) {
+        return true
+    } else {
+        return false
+    }
+}
+// console.log(isLeapYear(2000))    //returns true
+// console.log(isLeapYear(1900))    //returns false
+// console.log(isLeapYear(2020))    //returns true
+// console.log(isLeapYear(1999))    //returns false
+
+// Problem 13 Sanaa
+
+function getExtention(filename) {
+    let extension = filename.split('.')
+    return '.' + filename.split('.')[1]
+}
+// getExtention("hello.txt")     //returns ".txt"
+// getExtention("app.js")        //returns ".js"
+// getExtention("README.md")     //returns ".md"
+
 // problem 14 Syed 
 
 function absoluteNineteen (n) {
@@ -145,7 +190,9 @@ function switchLetters(str) {
 // console.log(switchLetters("anne"));         
 // console.log(switchLetters("hello world")); 
 // console.log(switchLetters("a"));            
-// console.log(switchLetters(""));     
+// console.log(switchLetters(""));  
+
+// Problem 16 Syed
 
 function changeString (str) {
     let result = ""
